@@ -155,3 +155,10 @@ const birthdays = [
     Read the answers to this problem: 
     https://stackoverflow.com/questions/492994/compare-two-dates-with-javascript
 */
+const result = birthdays.sort((a, b) => {
+  const date1 = new Date(a.birthday);
+  const date2 = new Date(b.birthday);
+  return date1 - date2;
+});
+
+console.log(result);

@@ -57,12 +57,22 @@ function dateTableHeader() {
   return thDate;
 }
 
+// SORTING FUNCTION
 function switchSort() {
   sortAsc = !sortAsc;
   const iconSpan = document.querySelector("#date-table-header-icon");
   if (sortAsc) {
     iconSpan.replaceChildren(sortDown);
+    transactions.sort((a, b) => {
+      // TODO: Correct sorting
+      return 0;
+    });
+    // Use renderTable function
   } else {
     iconSpan.replaceChildren(sortUp);
+    transactions.sort((a, b) => {
+      // TODO: Correct sorting
+      return 0;
+    });
   }
 }

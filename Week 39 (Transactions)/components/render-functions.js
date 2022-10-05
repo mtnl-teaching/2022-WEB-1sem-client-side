@@ -1,6 +1,6 @@
 function renderTable(table) {
   const container = document.querySelector(".transactions");
-  container.appendChild(table);
+  container.replaceChildren(table);
 }
 
 function renderFilterSection(filter) {

@@ -23,5 +23,12 @@
     "titleBar.inactiveForeground": "#15202b99"
   },
   "peacock.color": "#61dafb",
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "workbench.colorTheme": "Visual Studio Light",
+  "editor.fontWeight": "normal",
+  "window.zoomLevel": 4,
+  "editor.fontLigatures": false,
+  "editor.tabSize": 1,
+  "workbench.activityBar.visible": false,
+  "customPresentationMode.backup": {}
 }
