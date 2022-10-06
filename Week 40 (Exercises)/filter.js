@@ -74,8 +74,9 @@ const cars = [
     to create a new array containing only the "Chevrolet" cars.
 */
 const chevroletCars = cars.filter((car) => {
-  // TODO: filter.
-  return car;
+  if (cars.make == "Chevrolet") {
+    return car;
+  }
 });
 console.log(chevroletCars);
 
