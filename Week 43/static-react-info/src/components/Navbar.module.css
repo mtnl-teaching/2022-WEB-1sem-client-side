@@ -1,0 +1,15 @@
+.myNav {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: #21222A;
+}
+  
+.myNav > h2 {
+    color: #00D8FF;
+    margin-right: auto;
+}
+
+.myNav > p {
+    color: #DEEBF8;
+}
