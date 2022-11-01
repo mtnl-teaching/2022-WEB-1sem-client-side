@@ -5,11 +5,11 @@ const MainContent = () => {
         <div style={containerStyle}>
             <h1>Fun Facts about React</h1>
             <ul className={styles.myUl}>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100k stars on Github</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
+                <li style={padding}>Was first released in 2013</li>
+                <li style={padding}>Was originally created by Jordan Walke</li>
+                <li style={padding}>Almost 200k stars on Github</li>
+                <li style={padding}>Is maintained by Facebook</li>
+                <li style={padding}>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
         </div>
     );
@@ -20,6 +20,10 @@ const containerStyle = {
     color: "#FFFFFF",
     padding: "30px",
     backgroundColor: "#282D35",
+}
+
+const padding = {
+    padding: "10px"
 }
 
 export default MainContent;
