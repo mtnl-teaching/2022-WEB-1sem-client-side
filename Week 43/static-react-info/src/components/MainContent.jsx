@@ -1,15 +1,16 @@
 import styles from "./MainContent.module.css"
+import MyLi from "./MyLi";
 
 const MainContent = () => {
     return (
         <div style={containerStyle}>
             <h1>Fun Facts about React</h1>
             <ul className={styles.myUl}>
-                <li style={padding}>Was first released in 2013</li>
-                <li style={padding}>Was originally created by Jordan Walke</li>
-                <li style={padding}>Almost 200k stars on Github</li>
-                <li style={padding}>Is maintained by Facebook</li>
-                <li style={padding}>Powers thousands of enterprise apps, including mobile apps</li>
+                <MyLi message="Was first released in 2013" />
+                <MyLi message="Was originally created by Jordan Walke" />
+                <MyLi message="Almost 200k stars on Github" />
+                <MyLi message="Is maintained by Facebook" />
+                <MyLi message="Powers thousands of enterprise apps, including mobile apps" />
             </ul>
         </div>
     );
