@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import "./styles.css";
 
 function App() {
+  const [page, setPage] = useState("Home");
+
   const handleClick = (event) => {
     const pageButtonClicked = event.target.name;
+    setPage(pageButtonClicked);
     console.log(pageButtonClicked);
   };
 
@@ -23,9 +26,9 @@ function App() {
           About
         </button>
       </nav>
-      <Home title="Home" />
-      <About title="About" />
-      <Contact title="Contact" />
+      {page === "Home" && <Home title="Home" />}
+      {page === "About" && <About title="About" />}
+      {page === "Contact" && <Contact title="Contact" />}
     </div>
   );
 }
