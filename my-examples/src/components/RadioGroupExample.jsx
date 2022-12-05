@@ -7,8 +7,13 @@ export default function RadioGroupExample() {
     setTheme(event.target.value);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(theme);
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         checked={theme === "dark"}
         type={"radio"}
