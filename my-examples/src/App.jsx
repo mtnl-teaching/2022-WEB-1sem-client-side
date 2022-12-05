@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <div className="default-div">
         <Routes>
-          <Route path="/" element={<Home />} exact />
-          <Route path="/radiogroup" element={<RadioGroupExample />} />
-          <Route path="/dropdown" element={<DropdownExample />} />
+          <Route index element={<Home />} exact />
+          <Route path="radiogroup" element={<RadioGroupExample />} />
+          <Route path="dropdown" element={<DropdownExample />} />
         </Routes>
       </div>
     </div>

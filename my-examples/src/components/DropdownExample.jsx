@@ -10,7 +10,6 @@ export default function DropdownExample() {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <p>Selected time: {timeslot}</p>
-      <br></br>
       <form>
         <label htmlFor="timeslots">Choose a time:</label>
 
