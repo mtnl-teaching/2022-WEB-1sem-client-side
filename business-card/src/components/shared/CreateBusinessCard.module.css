@@ -1,0 +1,48 @@
+.modal {
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: #2e313a;
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+}
+
+.container {
+  height: 100%;
+}
+
+.defaultFlex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container > h1 {
+  margin-bottom: 15px;
+}
+
+.container input {
+  background: #41444d;
+  color: white;
+  border: none;
+  margin: 10px 0px;
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+}
+
+.container input:focus {
+  outline: 1px solid #61dafb;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.container input::placeholder {
+  color: #61dafb;
+  opacity: 0.6;
+}
+
+.container button {
+  margin-top: 15px;
+}
